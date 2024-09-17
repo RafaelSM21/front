@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# <h1 align="center"> FRONT-END  </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Tecnologias
 
-Currently, two official plugins are available:
+Tecnologias e ferramentas utilizadas no projeto: `Typescript, NodeJS, Express.js, MongoDB, jwt, bycryptjs`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como Executar a aplicação
+```bash
+# Baixe este repositório ou clone pelo Git usando o comando:
+$ git clone https://github.com/candago-3/front.git
 
-## Expanding the ESLint configuration
+# Acesse a pasta do projeto
+$ cd front
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Instale as dependências do projeto
+$ npm i
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Inicie o Projeto
+$ npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Rotas da aplicação
+<div align="center">
+  
+|                                                                    Tipo | Rota                       | Ação                              |
+| ----------------------------------------------------------------------: | :------------------------- | :-------------------------------- |
+|                                                                    <hr> | <hr>                       | **Controle de usuários**          |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/login`                   | Efetua o login do usuário  |
+|   [![](https://img.shields.io/badge/POST-4682B4?style=for-the-badge)]() | `/reigster`           | Cadastrar um usuário |
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+</div>
+
+## Estruturação das pastas
+
+| Pasta                    | Definição                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------ |
+| 📁 src/                   | Arquivos com o código fonte do projeto                                                     |
+| 📁 src/assets/        | Arquivos que armazenam imagens, fontes e ícones                                            |
+| 📁 src/components/             | Arquivos que contém componentes reutilizáveis da aplicação                                     |
+| 📁 src/styles/          | Arquivos de estilo globais ou específicos                                        |
+| 📁 src/views/            | Arquivos que contem as páginas que representam telas específicas da aplicação     |
+| 📄 .gitignore          | Arquivo com a retenção de arquivos pelo serviço de git.     |
+| 📄 tsconfig.json          | Arquivo usado para configurar o typescript como sintaxe, organização de arquivos, etc.     |
+| 📄 package.json           | Arquivo usado gerenciar as dependencias do projeto com o Yarn e compor scripts de terminal |
+
